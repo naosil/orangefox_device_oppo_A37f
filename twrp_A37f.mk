@@ -23,8 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from A37f device
 $(call inherit-product, device/oppo/A37f/device.mk)
@@ -43,7 +42,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := A37f
-PRODUCT_NAME := omni_A37f
+PRODUCT_NAME := twrp_A37f
 PRODUCT_BRAND := Oppo
 PRODUCT_MODEL := A37f
 PRODUCT_MANUFACTURER := Oppo
